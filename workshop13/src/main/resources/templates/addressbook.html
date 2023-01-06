@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Your contact information</h1>
+    <form action="#" data-th-action="@{/addressbook}" data-th-object="${contact}" method="post" novalidate>
+        <p>
+            Name:
+            <input type="text" data-th-field="*{name}">
+            <span data-th-if="${#fields.hasErrors('name'))" data-th-errors="*(name)"></span>
+        </p>
+
+
+        <p>
+            Date of birth:
+            <input type="date" data-th-field=</p>
+
+    </form>
+</body>
+
+</html>
